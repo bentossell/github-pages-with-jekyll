@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | default: site.title | default: "Untitled Page" }}</title>
+  <link rel="stylesheet" href="/assets/css/style.css"> <!-- Assuming a main CSS file, adjust if necessary or remove -->
+</head>
+<body>
+  <header>
+    <!-- Basic navigation structure can go here if desired -->
+    <nav>
+      <a href="/">Home</a>
+      <!-- Example: <a href="/food">Food</a> -->
+    </nav>
+  </header>
+  <main>
+    {{ content }}
+  </main>
+  <footer>
+    <p>&copy; {{ site.time | date: '%Y' }} {{ site.author | default: "Your Site" }}</p>
+  </footer>
+  <script src="/assets/js/custom_shortcuts.js" defer></script>
+</body>
+</html>
